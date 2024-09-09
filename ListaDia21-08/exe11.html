@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe 11</title>
+</head>
+<body>
+    <script>
+        const preco = Number(prompt ("Informe o preço do produto: " ))  
+        const desconto = 0.15
+        const precoAVista = preco - (preco * desconto)
+        const parcelas = 3
+        const precoParcelado = preco / parcelas
+        alert (`Preço R$: ${preco.toFixed(2)} \n À vista R$: ${precoAVista.toFixed(2)} \n Ou ${parcelas}x de R$: ${precoParcelado.toFixed(2)}`)
+    </script>
+</body>
+</html>
