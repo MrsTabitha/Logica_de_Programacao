@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Perda de Vida</title>
+</head>
+<body>
+    <script>
+        //5 - Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule quantos dias de vida um fumante perde e exiba o total em dias ○ Ex:  Quantos cigarros fuma por dia: 3 \n Quantos anos você fuma: 10 \n Como fumante você perdeu 76 dias de vida!
+
+        const cigarro = Number(prompt("Informe a quantidade de cigarros você fuma por dia: "))
+        const anos = Number(prompt("Informe a quantidade de anos que você fuma: "))
+        const tempoMin = 10 // minutos perdidos a cada cigarro
+        const cigarroAnos = 365 // dias
+        const minutosPerdido = 60 // minutos
+        const horasPerdida = 24 // horas perdidas de um dia
+        const totalCigarro = cigarro * cigarroAnos * anos
+        const tempoPerdido = totalCigarro * tempoMin
+        const tempoRoubado = tempoPerdido / (60 * 24)
+        alert(`Quantos cigarros fuma por dia: ${cigarro} \nQuantos anos você fuma: ${anos} \nComo fumante você perdeu ${tempoRoubado.toFixed(0)} dias de vida! `)
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Reais Dolares</title>
+</head>
+<body>
+    <script>
+        //1 - Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira (em R$) e mostre quantos dólares ela pode comprar. Considere US$1,00 = R$5,48. Ex: \nQuanto dinheiro você tem R$: 100.00 \nCom R$ 100.00, você pode comprar $ 18.25.
+
+        const dinheiro = Number(prompt("Informe a quantidade de dinheiro: R$"))
+        const cotacao = dinheiro / 5.48
+        alert(`Quanto dinheiro você tem: R$ ${dinheiro.toFixed(2)} \nCom R$ ${dinheiro.toFixed(2)}, você pode comprar: US$ ${cotacao.toFixed(2)}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Salário Mensal</title>
+</head>
+<body>
+    <script>
+        //3 - Crie um programa que leia o número de dias trabalhados em um mês e mostre o salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 por hora trabalhada. ○ Ex:  Número de dias trabalhados no mês: 20 \n O salário do funcionário Gerson é de R$ 4000.00
+
+        const diasTrab = Number(prompt("Informe o número de dias trabalhados em um mês: "))
+        const horasDia = 8
+        const salarioHr = 25
+        const salarioMes = diasTrab * horasDia * salarioHr
+        alert(`Número de dias trabalhados no mês: ${diasTrab} \nO seu salário é: R$ ${salarioMes.toFixed(2)}`)
+    </script>
+</body>
+</html>

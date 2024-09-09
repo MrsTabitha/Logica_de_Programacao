@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locação Carros</title>
+</head>
+<body>
+    <script>
+        //4 - A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar, sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado. ○ Ex:  Quantos KMs foram percorridos: 1000 \n Quantos dias o carro foi alugado: 2 \n o valor total a pagar é de R$: 380.00
+
+
+        
+        const km = Number(prompt("Informe quantos Km você percorreu: "))
+        const dias = Number(prompt("Informe a quantidade de dias pelos quais você alugou o carro: "))
+        const precoDia = 90
+        const precoKm = 0.20
+        const totalPrecoKm = km * precoKm
+        const aluguel = dias * precoDia
+        const aluguelTotal = totalPrecoKm + aluguel
+        alert(`Quantos KMs foram percorridos: ${km} \nQuantos dias o carro foi alugado: ${dias} \nValor total a pagar é de: R$ ${aluguelTotal.toFixed(2)}`)
+    </script>
+</body>
+</html>
