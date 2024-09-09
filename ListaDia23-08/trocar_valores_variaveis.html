@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca Valores</title>
+</head>
+<body>
+    <Script>
+        //5 - Faça um algoritmo que leia dois valores para as variáveis A e B e efetue a troca dos valores de forma que a variável A passe a possuir o valor da variável B e a variável B passe a possuir o valor da variável A. ● Entrada: ○ Entre com o valor para A: 10 ○ Entre com o valor para B: 20 ● Saída: ○ A variável A contém o valor: 20 ○ A variável B contém o valor: 10
+
+        let a = prompt("Entre com o valor para A:") // Entrada do valor de A
+        let b = prompt("Entre com o valor para B:") // Entrada do valor de B
+
+        // Troca de valores usando uma variável temporária
+        let temp = a
+        a = b
+        b = temp
+
+        alert(`A variável A contém o valor: ${a}\nA variável B contém o valor: ${b}`)
+    </Script>
+</body>
+</html>

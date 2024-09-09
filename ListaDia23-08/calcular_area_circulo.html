@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Área</title>
+</head>
+<body>
+    <script>
+        //1 - Faça um algoritmo para calcular a área de uma circunferência, considerando a fórmula ÁREA = π * RAIO2. Utilize as variáveis ÁREA e RAIO, a constante π (pi = 3,14159) e os operadores aritméticos de multiplicação. ○ Entrada ■ Digite o raio de um círculo : 8 \n Saída \n A área do círculo é: 200,96cm
+
+        const raio = Number(prompt("Digite o raio de um círculo: "))
+        const pi = 3.14
+        //const area = (raio * raio) * pi  
+        const area = pi * Math.pow(raio, 2)
+        alert(`A área do círculo é: ${area.toFixed(2)} cm²`)
+    </script>
+</body>
+</html>

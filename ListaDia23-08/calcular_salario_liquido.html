@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Salário Líquido</title>
+</head>
+<body>
+    <Script>
+        //3 - Faça um algoritmo que, obtenha o valor para a variável ht (horas trabalhadas no mês), obtenha o valor para a variável vh (valor hora trabalhada), Utilize a variável PD (percentual de desconto), com o valor de 10%. Com isso calcule o salário bruto => SB = HT * VH, o total de desconto => TD = (PD/100)*SB e o salário líquido => SL = SB – TD. // Entrada: \n Horas trabalhadas mês: 20 \n Valor hora trabalhada: 20 // Saída: \n Horas trabalhadas: 20hr,\n salário bruto R$ 400.00, \ndesconto R$ 60,00 e\n salário liquido R$ 360.00
+
+        const horasTrab = parseFloat(prompt("Digite as horas trabalhadas no mês:")) // Horas trabalhadas no mês
+        const valorHr = parseFloat(prompt("Digite o valor da hora trabalhada:")) // Valor da hora trabalhada
+        const percDesc = 10; // Percentual de desconto
+
+        const salarBruto = horasTrab * valorHr // Salário Bruto
+        const totalDesc = (percDesc / 100) * salarBruto // Total de desconto
+        const salarLiq = salarBruto - totalDesc // Salário Líquido
+
+        alert(`Horas trabalhadas: ${horasTrab}hr \nSalário bruto R$ ${salarBruto.toFixed(2)} \nDesconto R$ ${totalDesc.toFixed(2)} \nSalário líquido R$ ${salarLiq.toFixed(2)}`);
+    </Script>
+</body>
+</html>

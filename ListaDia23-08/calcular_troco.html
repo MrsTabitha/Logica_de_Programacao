@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Troco</title>
+</head>
+<body>
+    <Script>
+        //6 - Crie um programa que pergunte o valor de uma compra e o valor pago pelo cliente, e calcule o troco a ser devolvido. ● Entrada: ○ Informe o valor da compra R$: 85.00 ○ Informe o valor pago pelo cliente R$: 100.00 ● Saída: ○ O troco a ser devolvido é R$ 15.00.
+
+        const valorCompra = parseFloat(prompt("Informe o valor da compra R$:")) // Entrada do valor da compra
+        const valorPago = parseFloat(prompt("Informe o valor pago pelo cliente R$:")) // Entrada do valor pago pelo cliente
+
+        const troco = valorPago - valorCompra // Cálculo do troco
+
+        alert(`O troco a ser devolvido é R$ ${troco.toFixed(2)}.`) // Exibe o troco a ser devolvido
+    </Script>
+</body>
+</html>
