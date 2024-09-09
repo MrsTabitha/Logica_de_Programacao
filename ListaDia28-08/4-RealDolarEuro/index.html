@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Conversor de Moeda</title>
+</head>
+<body>
+    <!--4 - Faça uma página que permita ao usuário inserir um valor em Reais (BRL) e converta-o para Dólares (USD) ou Euros (EUR), com base em uma taxa de câmbio fixa. Use um campo de seleção (dropdown) para o usuário escolher a moeda.-->
+
+    <div class="container">
+
+        <img src="img.png" alt="Imagem ilustrativa" class="img-main">
+
+        <h2>Conversor de Moeda</h2>
+
+        <label for="valorBRL">Valor em Reais (BRL):</label>
+        <input type="number" id="valorBRL" placeholder="Digite o valor em BRL" step="0.01">
+        <br>
+        <label for="moeda">Converter para:</label>
+        <select id="moeda">
+            <option value="USD">Dólares (USD)</option>
+            <option value="EUR">Euros (EUR)</option>
+        </select>
+        <br>
+        <button id="botaoConverter">Converter</button>
+
+        <h1 id="resultado">Resultado: </h1>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
